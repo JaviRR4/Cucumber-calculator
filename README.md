@@ -1,4 +1,28 @@
-Para correr tests es posible con pytest en terminal o behave
+Para correr tests es posible con pytest en terminal o behave.
+
+
+Directorio feature, archivo example.feature
+Feature: showing off behave
+
+  Scenario: run a simple test
+     Given we have behave installed
+      When we implement a test
+      Then behave will test it for us!
+
+features/steps/". In that directory create a file called "example_steps.py" containing
+from behave import *
+
+@given('we have behave installed')
+def step_impl(context):
+    pass
+
+@when('we implement a test')
+def step_impl(context):
+    assert True is not False
+
+@then('behave will test it for us!')
+def step_impl(context):
+    assert context.failed is False
 
 Cucumber es una herramienta de Behavior-Driven Development (BDD) que permite escribir especificaciones y pruebas de manera que sean legibles tanto para desarrolladores como para personas no técnicas (como analistas de negocio o testers).
 Utiliza un lenguaje llamado Gherkin para escribir escenarios de prueba en un formato natural que se puede entender fácilmente.
