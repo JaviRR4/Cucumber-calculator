@@ -1,4 +1,4 @@
-Para correr tests es posible con pytest en terminal.
+Para correr tests es posible con pytest en terminal o behave
 
 Cucumber es una herramienta de Behavior-Driven Development (BDD) que permite escribir especificaciones y pruebas de manera que sean legibles tanto para desarrolladores como para personas no técnicas (como analistas de negocio o testers).
 Utiliza un lenguaje llamado Gherkin para escribir escenarios de prueba en un formato natural que se puede entender fácilmente.
